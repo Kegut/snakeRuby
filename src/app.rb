@@ -14,7 +14,7 @@ class App
         loop do
             sleep 0.5
             # movement trigger
-
+            
         end
     end
 end

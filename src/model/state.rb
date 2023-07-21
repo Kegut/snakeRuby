@@ -7,7 +7,7 @@ module Model
         LEFT = :left
     end
 
-    class Coord < Struct.new(:row, :col)
+    class Coord < Struct.new(:row , :col)
     end
 
     class Food < Coord
@@ -31,7 +31,7 @@ module Model
             ]),
             Model::Food.new(4, 4),
             Model::Grid.new(8, 12),
-            Direction::DOWN
+            Direction::DOWN,
             false
         )
     end
