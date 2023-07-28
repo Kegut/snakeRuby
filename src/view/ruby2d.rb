@@ -22,6 +22,8 @@ module View
         end
 
         def renderGame(state)
+            extend Ruby2D::DSL
+            close if state.game_over
             render_snake(state)
             render_food(state)
         end
